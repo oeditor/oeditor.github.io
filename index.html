@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="author" content="Natan Felles">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@natanfelles">
+	<meta name="twitter:creator" content="@natanfelles">
+	<meta name="twitter:title" content="Creative Webmaster - Online Editor">
+	<meta name="twitter:description" content="A powerfull online editor, more than 110 languages read, 34 color schemes. Import from and save to your computer.">
+	<meta name="twitter:image" content="https://natanfelles.github.io/assets/images_post/online-editor.png">
+	<meta property="og:url" content="https://natanfelles.github.io/online-editor"/>
+	<meta property="og:site_name" content="Creative Webmaster"/>
+	<meta property="og:title" content="Creative Webmaster - Online Editor"/>
+	<meta property="og:description" content="A powerfull online editor, more than 110 languages read, 34 color schemes. Import from and save to your computer."/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="https://natanfelles.github.io/assets/images_post/online-editor.png"/>
+	<meta property="og:image:width" content="1366"/>
+	<meta property="og:image:height" content="768"/>
+	<title>Online Editor | Creative Webmaster</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://natanfelles.github.io/assets/images/favicon.png"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/styles.min.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="">Online Editor</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<div class="navbar-form navbar-left">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-code"></i> Syntax <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu multi-column-dropdown columns-4">
+						<div class="row">
+
+							<div class="col-md-2">
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/abap');">abap</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/abc');">abc</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/actionscript');">actionscript</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/ada');">ada</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/apache_conf');">apache_conf</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/applescript');">applescript</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/asciidoc');">asciidoc</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/assembly_x86');">assembly_x86</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/autohotkey');">autohotkey</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/batchfile');">batchfile</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/c9search');">c9search</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/c_cpp');">c_cpp</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/cirru');">cirru</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/clojure');">clojure</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/cobol');">cobol</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/coffee');">coffee</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/coldfusion');">coldfusion</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/csharp');">csharp</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/css');">css</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/curly');">curly</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/dart');">dart</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/diff');">diff</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/django');">django</a></li>
+							</div>
+
+							<div class="col-md-2">
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/d');">d</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/dockerfile');">dockerfile</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/dot');">dot</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/eiffel');">eiffel</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/ejs');">ejs</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/elixir');">elixir</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/elm');">elm</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/erlang');">erlang</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/forth');">forth</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/fortran');">fortran</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/ftl');">ftl</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/gcode');">gcode</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/gherkin');">gherkin</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/gitignore');">gitignore</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/glsl');">glsl</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/gobstones');">gobstones</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/golang');">golang</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/groovy');">groovy</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/haml');">haml</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/handlebars');">handlebars</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/haskell');">haskell</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/haxe');">haxe</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/html_elixir');">html_elixir</a></li>
+
+							</div>
+
+							<div class="col-md-2">
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/html');">html</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/html_ruby');">html_ruby</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/ini');">ini</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/io');">io</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/jack');">jack</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/jade');">jade</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/java');">java</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/javascript');">javascript</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/jsoniq');">jsoniq</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/json');">json</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/jsp');">jsp</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/jsx');">jsx</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/julia');">julia</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/latex');">latex</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/lean');">lean</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/less');">less</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/liquid');">liquid</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/lisp');">lisp</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/live_script');">live_script</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/livescript');">livescript</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/logiql');">logiql</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/lsl');">lsl</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/lua');">lua</a></li>
+
+							</div>
+
+							<div class="col-md-2">
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/luapage');">luapage</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/lucene');">lucene</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/makefile');">makefile</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/markdown');">markdown</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/mask');">mask</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/matlab');">matlab</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/maze');">maze</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/mel');">mel</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/mips_assembler');">mips_assembler</a>
+								</li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/mipsassembler');">mipsassembler</a>
+								</li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/mushcode');">mushcode</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/mysql');">mysql</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/nix');">nix</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/nsis');">nsis</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/objectivec');">objectivec</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/ocaml');">ocaml</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/pascal');">pascal</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/perl');">perl</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/pgsql');">pgsql</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/php');">php</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/plain_text');">plain_text</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/powershell');">powershell</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/praat');">praat</a></li>
+
+							</div>
+
+							<div class="col-md-2">
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/prolog');">prolog</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/properties');">properties</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/protobuf');">protobuf</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/python');">python</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/razor');">razor</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/rdoc');">rdoc</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/rhtml');">rhtml</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/r');">r</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/rst');">rst</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/ruby');">ruby</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/sass');">sass</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/scad');">scad</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/scala');">scala</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/scheme');">scheme</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/scss');">scss</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/sh');">sh</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/sjs');">sjs</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/smarty');">smarty</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/snippets');">snippets</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/soy_template');">soy_template</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/space');">space</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/sql');">sql</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/sqlserver');">sqlserver</a></li>
+							</div>
+
+							<div class="col-md-2">
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/stylus');">stylus</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/svg');">svg</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/swift');">swift</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/swig');">swig</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/tcl');">tcl</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/tex');">tex</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/textile');">textile</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/text');">text</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/toml');">toml</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/twig');">twig</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/typescript');">typescript</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/vala');">vala</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/vbscript');">vbscript</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/velocity');">velocity</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/verilog');">verilog</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/vhdl');">vhdl</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/wollok');">wollok</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/xml');">xml</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/xquery');">xquery</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/yaml');">yaml</a></li>
+								<li><a href="#" onclick="editor.session.setMode('ace/mode/');"></a></li>
+							</div>
+
+
+						</div>
+					</ul>
+				</div>
+			</div>
+			<div class="navbar-form navbar-left">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-paint-brush"></i> Color Scheme <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu multi-column-dropdown columns-3">
+						<div class="row">
+
+							<div class="col-md-4">
+								<li><a href="#" onclick="editor.setTheme('ace/theme/ambiance');">Ambiance</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/chaos');">Chaos</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/chrome');">Chrome</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/clouds');">Clouds</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/clouds_midnight');">Clouds Midnight</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/cobalt');">Cobalt</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/crimson_editor');">Crimson Editor</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/dawn');">Dawn</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/dreamweaver');">Dreamweaver</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/eclipse');">Eclipse</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/github');">GitHub</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/idle_fingers');">Idle Fingers</a></li>
+							</div>
+							<div class="col-md-4">
+								<li><a href="#" onclick="editor.setTheme('ace/theme/iplastic');">iPlastic</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/katzenmilch');">Katzen Milch</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/kr_theme');">KR Theme</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/kuroir');">Kuroir</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/merbivore');">Merbivore</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/merbivore_soft');">Merbivore Soft</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/mono_industrial');">Mono Industrial</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/monokai');">Monokai</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/pastel_on_dark');">Pastel on Dark</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/solarized_dark');">Solarized Dark</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/solarized_light');">Solarized Light</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/sqlserver');">SQL Server</a></li>
+							</div>
+							<div class="col-md-4">
+								<li><a href="#" onclick="editor.setTheme('ace/theme/terminal');">Terminal</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/textmate');">TextMate</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/tomorrow');">Tomorrow</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/tomorrow_night');">Tomorrow Night</a></li>
+								<li>
+									<a href="#" onclick="editor.setTheme('ace/theme/tomorrow_night_blue');">Tomorrow Night Blue</a>
+								</li>
+								<li>
+									<a href="#" onclick="editor.setTheme('ace/theme/tomorrow_night_bright');">Tomorrow Night Bright</a>
+								</li>
+								<li>
+									<a href="#" onclick="editor.setTheme('ace/theme/tomorrow_night_eighties');">Tomorrow Night Eighties</a>
+								</li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/twilight');">Twilight</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/vibrant_ink');">Vibrant Ink</a></li>
+								<li><a href="#" onclick="editor.setTheme('ace/theme/xcode');">Xcode</a></li>
+							</div>
+
+
+						</div>
+					</ul>
+				</div>
+			</div>
+			<div class="navbar-form navbar-left">
+				<button type="button" class="btn btn-default" data-toggle="modal" data-target="#load">
+					<i class="fa fa-upload"></i> Load File
+				</button>
+			</div>
+			<div class="navbar-form navbar-left">
+				<button type="button" class="btn btn-default" data-toggle="modal" data-target="#saveAs">
+					<i class="fa fa-download"> </i> Save As
+				</button>
+			</div>
+			<div class="navbar-form navbar-left">
+				<a href="shortcuts.html" target="_blank" class="btn btn-default"><i class="fa fa-keyboard-o"></i> Keyboard Shortcuts
+				</a>
+			</div>
+			<div class="navbar-form navbar-right">
+				<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#about">
+					<i class="fa fa-info-circle"> </i> About
+				</button>
+			</div>
+		</div>
+	</div>
+</nav>
+<div id="editor" name="text"></div>
+<div class="modal fade" id="load" tabindex="-1" role="dialog" aria-labelledby="saveAsLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="loadLabel">Load File</h4>
+			</div>
+			<div class="modal-body">
+				<label for="loadfile">Loaded File</label>
+				<input type="file" name="filename" id="loadfile">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" onclick="loadFileAsText()" data-dismiss="modal">Load</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="saveAs" tabindex="-1" role="dialog" aria-labelledby="saveAsLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="saveAsLabel">Save As</h4>
+			</div>
+			<div class="modal-body">
+				<label for="filename">File Name</label>
+				<input type="text" name="filename" id="filename" class="form-control" placeholder="Insert File Name">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" onclick="saveTextAsFile()" data-dismiss="modal">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="saveAsLabel">
+	<div class="modal-dialog  modal-md" role="document">
+		<div class="modal-content">
+			<div class="modal-body" style="padding: 20px">
+				<div class="container-fluid">
+					<div class="col-md-12 text-center">
+						<a href="http://natanfelles.github.io" target="_blank">
+							<img src="assets/logo.png" alt="Natan Felles" width="300"> </a>
+					</div>
+					<div class="col-md-12" style="margin-top: 20px">
+						<table class="table table-hover table-bordered text-center">
+							<thead>
+							<tr>
+								<th colspan="2" class="text-center">What was necessary to do Online Editor</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td><i class="fa fa-coffee"></i> 2 cups of coffee</td>
+								<td><i class="fa fa-leaf"></i> 4 gourds of chimarrão</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-music"></i> 14 Linkin Park albums</td>
+								<td><i class="fa fa-birthday-cake"></i> 1 slice of chocolate cake</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-linux"></i> 4 Open Source projects</td>
+								<td><i class="fa fa-users"></i> &infin; Contributors</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-code"></i> 1.210 lines of code</td>
+								<td><i class="fa fa-font"></i> 30.015 characters typed</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-clock-o"></i> 7 hours of inspiration</td>
+								<td><i class="fa fa-mortar-board"></i> 4 years of development experience</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-12">
+						<div class="alert alert-info text-center" role="alert">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="hosted_button_id" value="CAEHZK6SL85DG">
+								<button type="submit" class="btn btn-primary">
+									<i class="fa fa-paypal"></i> Donate if this project is usefull to you
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<p class="text-center">This project is licensed under the terms of the
+							<a href="https://raw.githubusercontent.com/natanfelles/online-editor/master/LICENSE" target="_blank">BSD 3-Clause License</a>.
+						</p>
+						<p class="text-center social" style="margin-top: 20px">
+							<a href="https://natanfelles.github.io" target="_blank" class="fa fa-user"></a>
+							<a href="https://facebook.com/people/@/1007807062628320" target="_blank" class="fa fa-facebook"></a>
+							<a href="http://twitter.com/natanfelles" target="_blank" class="fa fa-twitter"></a>
+							<a href="https://linkedin.com/in/natanfelles" target="_blank" class="fa fa-linkedin"></a>
+							<a href="https://github.com/natanfelles" target="_blank" class="fa fa-github"></a>
+							<a href="https://natanfelles.github.io/feed" target="_blank" class="fa fa-feed"></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.4/ace.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.4/ext-language_tools.js"></script>
+<script src="assets/scripts.min.js"></script>
+</body>
+</html>

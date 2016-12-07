@@ -1,0 +1,85 @@
+/*!
+ * Online Editor
+ * @author Natan Felles <natanfelles@gmail.com>
+ */
+
+#editor {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	bottom: 0;
+	left: 0
+}
+
+a.active {
+	background-color: #eee
+}
+
+.name {
+	color: #000;
+	font-weight: 700;
+	font-size: 40px;
+	vertical-align: bottom
+}
+
+.career {
+	color: #4ca5d0;
+	font-size: 30px;
+	vertical-align: top
+}
+
+.modal-lg {
+	width: 800px
+}
+
+.social a {
+	text-decoration: none;
+	font-size: 30px;
+	margin: 0 5px
+}
+
+.dropdown-menu {
+	min-width: 200px
+}
+
+.dropdown-menu.columns-2 {
+	min-width: 400px
+}
+
+.dropdown-menu.columns-3 {
+	min-width: 700px
+}
+
+.dropdown-menu.columns-4 {
+	min-width: 960px
+}
+
+.dropdown-menu li a {
+	padding: 2px 15px;
+	font-weight: 300
+}
+
+.multi-column-dropdown {
+	list-style: none
+}
+
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #333 !important;
+	white-space: normal
+}
+
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #262626;
+	background-color: #f5f5f5
+}
+
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden
+	}
+}
