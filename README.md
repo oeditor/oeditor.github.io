@@ -2,7 +2,7 @@
 
 A powerfull online editor, more than 110 languages read, 34 color schemes. Import from and save to your computer.
 
-* https://natanfelles.github.io/online-editor
+* https://oeditor.github.io/
 
 ## Preview
 
