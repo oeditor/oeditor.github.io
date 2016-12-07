@@ -21,7 +21,7 @@ console.log(hello);
 	a.src = g;
 	m.parentNode.insertBefore(a, m);
 })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
-ga("create", "UA-75463090-1", "auto");
+ga("create", "UA-75463090-2", "auto");
 ga("send", "pageview");
 
 ace.require("ace/ext/language_tools");
